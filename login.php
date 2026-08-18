@@ -1,8 +1,5 @@
 <?php
 session_start();
-
-$error = $_SESSION['error'] ?? '';
-unset($_SESSION['error']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,9 +38,6 @@ unset($_SESSION['error']);
                     <br>
                     <input type="submit" name="loginBtn" value="Login" />
                 </form>
-                <span>
-                    <?php echo $error; ?>
-                </span>
             </div>
         </div>
     </div>
